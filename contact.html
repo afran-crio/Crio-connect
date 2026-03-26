@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Crio Connect</title>
+  <meta name="description" content="Get in touch with Crio Connect. We work with venues, brands, and cultural platforms looking to build identity through format design and cultural experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logos/empty blue (1).png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--dark">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logos/white on blue.png" alt="Crio Connect" class="logo-white">
+        <img src="logos/blue on white.png" alt="Crio Connect" class="logo-blue">
+      </a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Studio</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html" class="nav__cta active">Get in Touch</a>
+      </div>
+      <div class="nav__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__label">Get in Touch</p>
+      <h1 class="page-header__title">Let's design something that matters.</h1>
+      <p class="page-header__desc">Whether you're a venue, brand, or cultural platform — if you're looking to build identity, not just footfall, we should talk.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-info__item">
+            <p class="contact-info__label">Email</p>
+            <p class="contact-info__value"><a href="mailto:hello@crioconnect.com">hello@crioconnect.com</a></p>
+          </div>
+          <div class="contact-info__item">
+            <p class="contact-info__label">Location</p>
+            <p class="contact-info__value">Goa, India</p>
+          </div>
+          <div class="contact-info__item">
+            <p class="contact-info__label">Social</p>
+            <p class="contact-info__value">
+              <a href="#">Instagram</a> &nbsp;&middot;&nbsp;
+              <a href="#">LinkedIn</a> &nbsp;&middot;&nbsp;
+              <a href="#">Twitter</a>
+            </p>
+          </div>
+
+          <div style="margin-top: 3rem; padding: 2.5rem; background: var(--crio-grey); border-radius: 8px;">
+            <h4 style="margin-bottom: 1rem;">Who should reach out?</h4>
+            <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="font-size: 0.95rem; color: var(--crio-grey-text); padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--crio-blue); font-weight: bold;">&#x2192;</span>
+                Hospitality venues wanting cultural programming
+              </li>
+              <li style="font-size: 0.95rem; color: var(--crio-grey-text); padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--crio-blue); font-weight: bold;">&#x2192;</span>
+                Brands looking to connect with culture through experiences
+              </li>
+              <li style="font-size: 0.95rem; color: var(--crio-grey-text); padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--crio-blue); font-weight: bold;">&#x2192;</span>
+                Festivals & platforms seeking format design
+              </li>
+              <li style="font-size: 0.95rem; color: var(--crio-grey-text); padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--crio-blue); font-weight: bold;">&#x2192;</span>
+                Spaces that want to stand for something
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-1">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="type">You Are</label>
+              <select id="type" name="type" required>
+                <option value="" disabled selected>Select your type</option>
+                <option value="venue">A Venue / Hospitality Space</option>
+                <option value="brand">A Brand</option>
+                <option value="festival">A Festival / Cultural Platform</option>
+                <option value="artist">An Artist / Collaborator</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us More</label>
+              <textarea id="message" name="message" placeholder="What are you looking to build? What's the space or brand? What cultural direction are you exploring?" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message <span class="btn__arrow">&rarr;</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map / Location Statement -->
+  <section class="section section--blue" style="text-align: center;">
+    <div class="container reveal">
+      <p class="section-header__label" style="color: rgba(255,255,255,0.5);">Based In</p>
+      <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem;">Goa, India</h2>
+      <p style="color: rgba(255,255,255,0.6); max-width: 500px; margin: 0 auto;">Designing formats for venues and brands across India. Open to partnerships wherever culture is being built.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="logos/blue on white.png" alt="Crio Connect">
+          <p>Thinking + Design Studio designing cultural formats and experiences for venues and brands.</p>
+          <p class="footer__tagline">#ShapeThe&#x0915;&#x0932;&#x094D;&#x091A;&#x0930;</p>
+        </div>
+        <div class="footer__col">
+          <h4>Studio</h4>
+          <a href="about.html">About Crio</a>
+          <a href="about.html#philosophy">Philosophy</a>
+          <a href="about.html#process">Process</a>
+          <a href="about.html#principles">Principles</a>
+        </div>
+        <div class="footer__col">
+          <h4>Work</h4>
+          <a href="work.html">All Projects</a>
+          <a href="work.html#formats">Format Design</a>
+          <a href="work.html#programming">Programming</a>
+          <a href="work.html#partnerships">Partnerships</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="contact.html">Get in Touch</a>
+          <a href="mailto:hello@crioconnect.com">Email Us</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Crio Connect. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
