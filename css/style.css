@@ -145,7 +145,7 @@ p {
 }
 
 .nav__logo img {
-  height: 100px;
+  height: 200px;
   width: auto;
   transition: var(--transition-fast);
   object-fit: contain;
