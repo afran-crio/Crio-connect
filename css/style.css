@@ -145,30 +145,15 @@ p {
 }
 
 .nav__logo img {
-  height: 44px;
+  height: 72px;
   width: auto;
   transition: var(--transition-fast);
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
-/* White logo on dark/blue backgrounds — transparent PNG, no blend needed */
-.nav__logo .logo-white {
-  display: block;
-}
-
-/* Blue logo on light backgrounds — multiply blend removes the white bg */
-.nav__logo .logo-blue {
-  display: none;
-  mix-blend-mode: multiply;
-}
-
-/* Switch to blue logo on scrolled white background */
-.nav.scrolled .logo-white {
-  display: none;
-}
-
-.nav.scrolled .logo-blue {
-  display: block;
+.nav.scrolled .nav__logo img {
+  filter: none;
 }
 
 .nav__links {
