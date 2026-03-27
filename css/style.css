@@ -141,6 +141,7 @@ p {
 .nav__logo {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .nav__logo img {
@@ -148,6 +149,20 @@ p {
   width: auto;
   transition: var(--transition-fast);
   object-fit: contain;
+}
+
+/* Text-based logo */
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--crio-white);
+  transition: var(--transition-fast);
+  line-height: 1;
+}
+
+.nav.scrolled .logo-text {
+  color: var(--crio-blue);
 }
 
 /* White logo on dark/blue backgrounds */
@@ -309,7 +324,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 70%;
+  object-position: center 30%;
   opacity: 0.2;
 }
 
@@ -346,10 +361,11 @@ p {
 }
 
 .hero__tagline {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 1rem;
 }
 
 .hero__scroll {
