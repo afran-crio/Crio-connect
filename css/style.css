@@ -145,32 +145,19 @@ p {
 }
 
 .nav__logo img {
-  height: 32px;
+  height: 44px;
   width: auto;
   transition: var(--transition-fast);
   object-fit: contain;
 }
 
-/* Text-based logo */
-.logo-text {
-  font-size: 1.6rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: var(--crio-white);
-  transition: var(--transition-fast);
-  line-height: 1;
-}
-
-.nav.scrolled .logo-text {
-  color: var(--crio-blue);
-}
-
-/* White logo on dark/blue backgrounds */
+/* White logo on dark/blue backgrounds — screen blend removes the blue bg */
 .nav__logo .logo-white {
   display: block;
   mix-blend-mode: screen;
 }
 
+/* Blue logo on light backgrounds — multiply blend removes the white bg */
 .nav__logo .logo-blue {
   display: none;
   mix-blend-mode: multiply;
@@ -324,7 +311,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 80%;
   opacity: 0.2;
 }
 
