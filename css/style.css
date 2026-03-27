@@ -120,7 +120,7 @@ p {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1.5rem 0;
+  padding: 0.4rem 0;
   transition: var(--transition);
 }
 
@@ -129,7 +129,7 @@ p {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-  padding: 1rem 0;
+  padding: 0.3rem 0;
 }
 
 .nav__inner {
@@ -145,7 +145,7 @@ p {
 }
 
 .nav__logo img {
-  height: 200px;
+  height: 80px;
   width: auto;
   transition: var(--transition-fast);
   object-fit: contain;
