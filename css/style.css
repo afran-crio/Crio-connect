@@ -1011,6 +1011,146 @@ p {
   color: var(--crio-white);
 }
 
+/* --- Services Stack (Services Page) --- */
+.services-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--crio-grey-mid);
+  padding: 3rem 0;
+  transition: var(--transition);
+}
+
+.service-row:last-child {
+  border-bottom: 1px solid var(--crio-grey-mid);
+}
+
+.service-row__header {
+  padding-right: 4rem;
+}
+
+.service-row__number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--crio-blue);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.service-row__title {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.service-row__tagline {
+  font-size: 1rem;
+  color: var(--crio-grey-text);
+  line-height: 1.6;
+}
+
+.service-row__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-content: start;
+}
+
+.service-row__col-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--crio-blue);
+  margin-bottom: 0.6rem;
+}
+
+/* --- Changes Grid (Services Page) --- */
+.changes-grid {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  align-items: center;
+  gap: 0;
+  max-width: 860px;
+}
+
+.changes-col__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--crio-blue);
+  margin-bottom: 1.5rem;
+}
+
+.changes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.changes-list li {
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  font-weight: 500;
+  color: var(--crio-grey-text);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--crio-grey-mid);
+}
+
+.changes-list--to li {
+  color: var(--crio-black);
+  font-weight: 600;
+}
+
+.changes-col__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.changes-arrow-line {
+  width: 40px;
+  height: 2px;
+  background: var(--crio-blue);
+  position: relative;
+}
+
+.changes-arrow-line::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--crio-blue);
+  border-top: 2px solid var(--crio-blue);
+  transform: rotate(45deg);
+}
+
+/* --- Outcomes Grid (Services Page) --- */
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--crio-grey-mid);
+}
+
+.outcome-item {
+  background: var(--crio-white);
+  padding: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--crio-black);
+  line-height: 1.5;
+}
+
 /* --- Animations --- */
 .reveal {
   opacity: 0;
